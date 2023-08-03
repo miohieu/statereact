@@ -10,7 +10,7 @@ const Main = () => {
         setImage(prev => data.find(e => e.id === id).url)
     }
     return (
-        <div className="flex">
+        <div className="flex items-center">
             <ShowCase image={image} />
             <div className="main__product">
 

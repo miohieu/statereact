@@ -2,19 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.main__container {
+    @apply container mx-auto
+}
+
 .product-container {
-    @apply flex items-center justify-center gap-8
+    @apply flex items-center justify-center gap-8 cursor-pointer hover:bg-rose-400
 }
 .product-card {
-    @apply border p-5 hover:bg-rose-600 
+    @apply border p-5 hover:bg-rose-600  
 }
 .model {
     @apply relative
 }
 .show-case__image{
-    @apply absolute top-0 left-0
+    @apply absolute top-0
+
 }
 
 .main__product {
     @apply grid grid-rows-3 grid-flow-col gap-5
+}
+
+.page__container {
+        background-image: url("/images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+}
+.header {
+    @apply static p-5 bg-rose-200
+}
+.show-container {
+    @apply container md:mx-auto
 }
