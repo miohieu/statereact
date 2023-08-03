@@ -1,10 +1,16 @@
 
-const link = "../public/Images/model.jpg"
+import ProductShow from "./ProductShow"
 
-const ShowCase = () => {
+const linkModel = "/images/model.jpg"
+
+
+const ShowCase = ({image}) => {
   return (
-    <div>
-      <img src={link} alt="model" />
+      <div>
+    <div className="model">
+      <img src={linkModel} alt="model" />
+      </div>
+      <ProductShow className="showcase-product" url={image}/>
       </div>
   )
 }

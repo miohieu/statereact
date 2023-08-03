@@ -1,19 +1,18 @@
-import { data } from "../utils/dataGlasses.js"
+const Product = ({ handleClick, productImages }) => {
 
-const Product = () => {
-  return (
-    <div>
-      Product
-      <div>
-      {data.map(e => (
-          <div key={e.id}> 
-          {e.name}
-          <img src={e.url} alt="glasses" />
-          </div>))}
+    return (
+        <div className="product-container">
+            <img src={productImages} onClick={handleClick}
+                style={
+                    {
+                        width: 200,
+                        height: 300,
+                        objectFit: "contain"
+                    }
 
-      </div>
-      </div>
-  )
+                } />
+        </div>
+    )
 }
 
 export default Product
